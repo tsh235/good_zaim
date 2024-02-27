@@ -5,8 +5,18 @@ burger.addEventListener('click', () => {
   burger.classList.toggle('burger_active');
   nav.classList.toggle('nav_active');
   document.querySelector('body').classList.toggle('no-scroll');
-  console.log(document.querySelector('body'));
+
+  nav.addEventListener('click', ({target}) => {
+    console.log('target: ', target);
+    if (target.classList.contains('nav__link')) {
+      burger.classList.remove('burger_active');
+      nav.classList.remove('nav_active');
+      document.querySelector('body').classList.remove('no-scroll');
+    }
+  })
 });
+
+
 
 // form choice
 const sliderElSumm = document.querySelector(".choice__range_summ");
