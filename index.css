@@ -1,6 +1,7 @@
 :root {
   --text-color: #333;
-  --accent-01: #57B18A;
+  /* --accent-01: #57B18A; */
+  --accent-01: #00844B;
   --accent-02: #FF7347;
   --bg: rgba(0, 99, 29, 0.2);
   --color-light: #c0c2c5;
